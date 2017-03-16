@@ -1,6 +1,5 @@
 <?php 
 	namespace geaking;
-// §4✘ ↪ §
 
 
 /************************Импорты******************/
@@ -161,8 +160,8 @@ class crDonateCase extends PluginBase implements Listener {
 	$p = $e->getPlayer();
 	$name = $p->getName();    	
 	$p->sendMessage('§2[crDonateCase] §6 Вам выпал делюкс из Донат-Кейса ✔!§r');
-   	$this->getServer()->broadcastMessage('§2[crDonateCase] §6 Игроку ' .$name. ' выпал делюкс из Донат-Кейса ✔!§r');  
-	$this->getServer()->dispatchCommand(new ConsoleCommandSender(), 'setgroup ' .$name. ' Delux'); 
+   	$this->getServer()->broadcastMessage('§2[crDonateCase] §6 Игроку ' .$name. ' выпал вип из Донат-Кейса ✔!§r');  
+	$this->getServer()->dispatchCommand(new ConsoleCommandSender(), 'setgroup ' .$name. ' Vip'); 
    	break; 
    	case 5:
 	$p = $e->getPlayer();
@@ -181,10 +180,10 @@ class crDonateCase extends PluginBase implements Listener {
 	$p = $e->getPlayer();
 	$name = $p->getName();    	
 	$p->sendMessage('§2[crDonateCase] §6 Вам §4Экстра§6 выпало из Донат-Кейса O.O!§r');
-   	$this->getServer()->broadcastMessage('§2[crDonateCase] §6 Игроку ' .$name. ' выпало §4Экстра§6 из Донат-Кейса O.O!§r');
+   	$this->getServer()->broadcastMessage('§2[crDonateCase] §6 Игроку ' .$name. ' выпало Вип§6 из Донат-Кейса O.O!§r');
    	$level->addParticle(new FlameParticle(new Vector3($x+rand(0,1.00), $y+rand(0,1.00), $z+rand(0,1.00))));
    	$level->addParticle(new FlameParticle(new Vector3($x+rand(0,1.00), $y+rand(0,1.00), $z+rand(0,1.00))));    	   
-	$this->getServer()->dispatchCommand(new ConsoleCommandSender(), 'setgroup ' .$name. ' Extra'); 	
+	$this->getServer()->dispatchCommand(new ConsoleCommandSender(), 'setgroup ' .$name. ' Vip'); 	
    	break;   
    	case 8:
 	$p = $e->getPlayer();
